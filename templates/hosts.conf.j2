@@ -1,4 +1,9 @@
-# Munin hosts.
+# {{ ansible_managed }}
+
+# Localhost
+[localhost]
+  address localhost
+
 {% for host in munin_hosts %}
 [{{ host.name }}]
     address {{ host.address }}
@@ -7,5 +12,3 @@
     {{ extra }}
 {% endfor %}
 {% endif %}
-
-{% endfor %}

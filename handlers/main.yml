@@ -1,0 +1,15 @@
+---
+- name: restart nginx
+  service:
+    name: nginx
+    state: restarted
+
+- name: restart munin-cgi-html
+  service:
+    name: munin-cgi-html
+    state: restarted
+
+- name: restart munin-cgi-graph
+  service:
+    name: munin-cgi-graph
+    state: restarted

@@ -2,15 +2,12 @@
 dependencies: []
 
 galaxy_info:
-  author: geerlingguy
-  description: Munin monitoring server for RedHat/CentOS or Debian/Ubuntu.
-  company: "Midwestern Mac, LLC"
-  license: "license (BSD, MIT)"
+  author: hyperized
+  description: Munin monitoring server with Nginx config, running FCGI for Ubuntu/Debian
+  company: FD Mediagroep
+  license: MIT
   min_ansible_version: 1.4
   platforms:
-  - name: EL
-    versions:
-    - all
   - name: Debian
     versions:
     - all
