@@ -1,19 +1,17 @@
 ---
-dependencies: []
-
 galaxy_info:
-  author: hyperized
-  description: Munin monitoring server with Nginx config, running FCGI for Ubuntu/Debian
-  company: FD Mediagroep
+  author: Gerben Geijteman
+  description: Munin monitoring server with Nginx config, running FDCGI for Ubuntu/Debian
+  company: FD Mediagroep BV.
   license: MIT
   min_ansible_version: 1.4
   platforms:
-  - name: Debian
-    versions:
-    - all
   - name: Ubuntu
     versions:
     - all
   categories:
-    - monitoring
-    - system
+  - monitoring
+  - system
+  - web
+dependencies: []
+  
