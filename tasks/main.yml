@@ -37,7 +37,7 @@
 
 - name: set up nginx config
   copy:
-    src: munin.conf
+    src: nginx-munin.conf
     dest: /etc/nginx/sites-available/munin
   notify: restart nginx
 
@@ -85,3 +85,13 @@
     dest: /etc/init.d/munin-cgi-graph
     state: link
   notify: restart munin-cgi-graph
+
+- name: ensure munin-cgi-html service state
+  service:
+    name: munin-cgi-html
+    state: "{{ munin_cgi_html_service_state }}"
+
+- name: ensure munin-cgi-graph service state
+  service:
+    name: munin-cgi-graph
+    state: "{{ munin_cgi_graph_service_state }}"
